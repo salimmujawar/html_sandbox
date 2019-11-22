@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form & Input</title>
+</head>
+<body>
+  <form action="">
+    <div>
+      <!-- for value should equal id to highlight -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" value="Jhon Doe">
+    </div>
+    <div>      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter an Email">
+    </div>
+    <div>      
+      <label for="message">Message</label>
+      <!-- col=horizontal, rows= vertical -->
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div>      
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="f" selected>Female</option>
+          <option value="m">Male</option>
+        </select>
+      </div>
+      <div>      
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age">
+      </div>
+      <div>      
+          <label for="dob">DOB</label>
+          <input type="date" id="dob" name="dob">
+      </div>
+      <div>      
+          <label for="membership">Membership</label>
+          Simple<input type="radio" checked id="simple" name="membership" value="simple">
+          Standard<input type="radio" id="standard" name="membership" value="standard">
+          Super<input type="radio" id="super" name="membership" value="super">
+      </div>
+      <div>      
+          <label for="like">I Like..</label>
+          <input type="checkbox" checked id="like" name="like" value="simple">Bike
+          <input type="checkbox" id="like" name="like" value="standard">Car
+          <input type="checkbox" id="like" name="like" value="super">Boat
+      </div>
+      <input type="submit" value="Submit">
+      <!-- using button tag -->
+      <!-- <button type="submit">Submit</button> -->
+      <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
